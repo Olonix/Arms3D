@@ -12,7 +12,7 @@ Initially we have a synchronized stream of color images and depth maps received 
 </p>
 
 ## Output Skeleton
-As a result, we get three-dimensional coordinates of key points of the hands.
+As a result, we get three-dimensional coordinates of keypoints of the hands.
 <p align="center">
     <img src="assets/EXAMPLE_VIDEO.gif" width="50%">
 </p>

@@ -1,0 +1,15 @@
+*.pt
+*.mp4
+*.pyc
+*.json
+*.ply
+/experiments
+/env_for_estim
+/*_frames
+/*_vis
+/output_metrics
+/Log
+/CASE*
+Full_Body/help_modules/fobbiden_angles.py
+/dist
+/build/main

@@ -5,7 +5,7 @@ import scipy.signal
 from frame_processing import visualize_3d
 
 
-INPUT_JSON_DIR = "output_skeletons"
+INPUT_JSON_DIR = "ekf_skeletons"
 OUTPUT_JSON_DIR = "smoothed_skeletons"
 OUTPUT_VIS_DIR = "smoothed_3d_vis"
 
@@ -87,7 +87,7 @@ def process_skeletons():
         with open(smoothed_json_path, "w") as f:
             json.dump({"frame": json_file, "skeleton": smoothed_skeleton}, f, indent=4)
 
-        vis_path = os.path.join(OUTPUT_VIS_DIR, json_file.replace(".json", "_smoothed.png"))
+        vis_path = os.path.join(OUTPUT_VIS_DIR, json_file.replace(".json", "_smoothed"))
         visualize_3d(smoothed_skeleton, vis_path)
 
 if __name__ == "__main__":
